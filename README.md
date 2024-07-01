@@ -19,20 +19,17 @@ Bewakoof is a feature-rich shopping application that provides users with a seaml
 
 ## Technologies Used:
 
-- **React:** A JavaScript library for building user interfaces.
+-**Node:**Node.js is an open source server environment. Node.js allows you to run JavaScript on the server. 
 
-- **Redux Toolkit:** A library for managing application state.
+- **JWT:** JWT authentication is a token-based stateless authentication mechanism.
+- **mongoDB:** MongoDB is a document database. It stores data in a type of JSON format called BSON.
 
-- **Tailwind CSS:** A utility-first CSS framework for quickly building custom designs.
-
-- **Material-UI & Next-UI:** Popular React UI frameworks for building responsive and accessible user interfaces.
-
-- **Firebase:** A platform for building web and mobile applications without server-side programming.
+-**Express:** Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. APIs
 
 ## Features:
 
 - **Authentication:**
-  Secure and seamless user authentication using Firebase, ensuring user data privacy and security.
+  Secure and seamless user authentication using JWT, ensuring user data privacy and security.
 
 - **Cart Management:**
   Efficient cart management system allowing users to add, remove, and update products in their cart effortlessly.
@@ -44,7 +41,7 @@ Bewakoof is a feature-rich shopping application that provides users with a seaml
   Advanced filtering options to help users easily find products based on categories, enhancing the shopping experience.
 
 - **Order Storage in Database:**
-  Robust order management system that stores individual user orders in the Firebase database for easy retrieval and tracking.
+  Robust order management system that stores individual user orders in the MONGODB database for easy retrieval and tracking.
 
 - **Responsive UI:**
   A highly responsive user interface built with Material-UI, Next-UI, and Tailwind CSS, ensuring a smooth shopping experience across all devices.
@@ -60,27 +57,22 @@ Bewakoof is a feature-rich shopping application that provides users with a seaml
 ### **Clone the repository:**
 
 ```bash
-git clone https://github.com/princethk/bewakoof_firebase
-cd bewakoof_firebase
+git clone https://github.com/princethk/bewakoof-backend
+cd bewakoof-backend
 ```
 
 ### **Install the dependencies:**
 
 ```bash
-pnpm install
+npm install
 ```
 
 ### **Run the development server:**
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
-### **Build for production:**
-
-```bash
-pnpm build
-```
 
 > Important Note: There is an .env.example file in the repository with sample variables required to run this project. These include Firebase credentials. Create a .env file in the root of the project and set these variables with proper values.
 
@@ -102,37 +94,30 @@ Bewakoof was developed to provide users with a seamless shopping experience, lev
 
 6. **Documentation:** Comprehensive documentation was created to guide developers and users through the setup, usage, and deployment of the application. This documentation provides clear instructions and explanations for each step, making it easy for both developers and users to understand and utilize the app effectively.
 
-### Challenges Faced and Solutions Implemented
+
 
 #### Authentication and Security
 
-**Challenge:** Implementing secure user authentication and data privacy using Firebase.
+**Challenge:** Implementing secure user authentication and data privacy using JWT.
 
-**Solution:** Utilized Firebase Authentication for secure user authentication, ensuring that user data is protected and privacy is maintained. Implemented proper security rules to restrict access to sensitive data and prevent unauthorized actions.
+**Solution:** Utilized JWT Authentication for secure user authentication, ensuring that user data is protected and privacy is maintained. Implemented proper security rules to restrict access to sensitive data and prevent unauthorized actions.
 
 #### Cart Management
 
 **Challenge:** Developing an efficient cart management system with smooth add, remove, and update functionalities.
 
-**Solution:** Implemented a robust cart management system using Redux Toolkit, allowing users to seamlessly add, remove, and update products in their cart. Utilized local storage for persistant cart data.
+**Solution:** Implemented a robust cart management system using Mongodb, allowing users to seamlessly add, remove, and update products in their cart. Utilized local storage for persistant cart data.
 
 #### Order Processing and Storage
 
 **Challenge:** Implementing order processing and storage while ensuring reliability and scalability.
 
-**Solution:** Utilized Firestore, a flexible, scalable database for storing order data.
+**Solution:** Utilized mongoDB, a flexible, scalable database for storing order data.
 
-#### Responsive UI
-
-**Challenge:** Building a highly responsive user interface that provides a consistent experience across all devices.
-
-**Solution:** Leveraged Material-UI, Next-UI, and Tailwind CSS to create a responsive UI that adapts to various screen sizes and resolutions. Implemented responsive design principles and media queries to ensure optimal layout and usability on desktops, tablets, and mobile devices.
-
-### Deployment
 
 #### Deployment Steps
 
-1. **Fork the Repository:** https://github.com/princethk/bewakoof_firebase
+1. **Fork the Repository:** https://github.com/princethk/bewakoof-backend
 2. Create a Vercel account if you haven't already.
 3. Once logged in, click on "New Project" in the Vercel dashboard.
 4. Select "Import Git Repository" and connect your GitHub account if prompted.
